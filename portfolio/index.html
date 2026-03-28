@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name — UI/UX Designer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <canvas id="bgCanvas"></canvas>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-logo" id="navLogo"></div>
+    <ul class="nav-links">
+      <li><a href="#process">Process</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#faqs">FAQs</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="theme-toggle" id="themeToggle" title="Toggle Light Mode">
+        <svg id="moonIcon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg id="sunIcon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      </button>
+      <a href="#contact" class="btn-primary">Hire Me</a>
+    </div>
+    <button class="hamburger" id="hamburger">&#9776;</button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#process">Process</a>
+    <a href="#services">Services</a>
+    <a href="#work">Work</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#faqs">FAQs</a>
+    <a href="#contact" class="btn-primary">Hire Me</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <div class="badge-avatars">
+          <img src="1549032131247.jfif" alt="Client 1" class="badge-avatar" />
+          <img src="1721665831942.jfif" alt="Client 2" class="badge-avatar" />
+          <img src="1728211195688-removebg-preview.png" alt="Client 3" class="badge-avatar" />
+          <img src="1748172068405.jfif" alt="Client 4" class="badge-avatar" />
+          <img src="1766758800074.jfif" alt="Client 5" class="badge-avatar" />
+          <img src="1769610420213 (1).jfif" alt="Client 6" class="badge-avatar" />
+        </div>
+        <div class="badge-info">
+          <span class="stars">★★★★★</span>
+          <p class="badge-title">Trusted By 30+ Clients <br /><span class="badge-accent">World Wide</span></p>
+        </div>
+      </div>
+      <h1>Designing Interfaces People <br /><span class="accent">Love to Use & Remember</span></h1>
+      <p class="hero-sub">I help brands and founders stand out with strategic UI design and personal branding — turning ideas into polished, high-converting digital products that leave a lasting impression.</p>
+      <div class="hero-btns">
+        <a href="#contact" class="btn-primary">Let's Work Together</a>
+        <a href="#work" class="btn-ghost">See My Work &rsaquo;</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <div class="hero-glow"></div>
+      <div class="hero-image-wrapper" id="heroCard">
+        <img src="WhatsApp_Image_2026-02-13_at_11.05.52_PM-removebg-preview.png" alt="Designer photo" />
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats">
+    <div class="stat"><span class="stat-num">3+</span><span>Years of Experience</span></div>
+    <div class="stat-divider"></div>
+    <div class="stat"><span class="stat-num">102+</span><span>Completed Projects</span></div>
+    <div class="stat-divider"></div>
+    <div class="stat"><span class="stat-num">80+</span><span>Happy Clients</span></div>
+    <div class="stat-divider"></div>
+    <div class="stat"><span class="stat-num">10+</span><span>5-Star Reviews</span></div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="section" id="process">
+    <div class="section-label">How I Work</div>
+    <h2 class="section-title">My Design <span class="accent">Process</span></h2>
+    <div class="process-grid">
+      <div class="process-card">
+        <span class="process-num">01</span>
+        <h3>Discovery & Research</h3>
+        <p>Deep diving into your brand, target audience, and competitors to build a solid design foundation.</p>
+      </div>
+      <div class="process-card">
+        <span class="process-num">02</span>
+        <h3>Wireframe & Layout</h3>
+        <p>Sketching low-fidelity wireframes and user flows to define structure before any visual work begins.</p>
+      </div>
+      <div class="process-card">
+        <span class="process-num">03</span>
+        <h3>UI & Visual Design</h3>
+        <p>Crafting pixel-perfect, high-fidelity UI screens with strong typography, color systems, and graphic elements.</p>
+      </div>
+      <div class="process-card">
+        <span class="process-num">04</span>
+        <h3>Prototype & Handoff</h3>
+        <p>Building interactive Figma prototypes and delivering developer-ready files with all assets and design tokens.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section section-dark" id="services">
+    <div class="section-label">What I Offer</div>
+    <h2 class="section-title">My <span class="accent">Services</span></h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#f5a623" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M3 9h18M9 21V9"/></svg>
+        </div>
+        <h3>UI Design</h3>
+        <p>Pixel-perfect, modern interfaces for web and mobile apps that are visually stunning and user-friendly.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#f5a623" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35M11 8v6M8 11h6"/></svg>
+        </div>
+        <h3>UX Research</h3>
+        <p>In-depth user research, usability testing, and data-driven insights to design experiences that truly work.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#f5a623" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg>
+        </div>
+        <h3>Mobile App Design</h3>
+        <p>Intuitive iOS & Android app designs that follow platform guidelines and deliver seamless user journeys.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#f5a623" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        </div>
+        <h3>Design Systems</h3>
+        <p>Scalable component libraries, style guides, and design tokens that keep your product consistent at scale.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#f5a623" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        </div>
+        <h3>Website Design</h3>
+        <p>High-converting landing pages and full websites designed to attract, engage, and turn visitors into clients.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#f5a623" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><polyline points="13 2 13 9 20 9"/><path d="M9 15l2 2 4-4"/></svg>
+        </div>
+        <h3>Prototyping</h3>
+        <p>Interactive, clickable Figma prototypes that bring your product to life and validate ideas before development.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section class="section" id="work">
+    <div class="section-label">Portfolio</div>
+    <h2 class="section-title">Selected <span class="accent">Work</span></h2>
+    <div class="work-grid">
+      <div class="work-card">
+        <img src="Free iPad Pro mockup on a dark podium (Mockuuups Studio) 1.png" alt="HealNet Healthcare UI" />
+        <div class="work-info">
+          <span class="work-tag">Healthcare Web Design</span>
+          <h3>HealNet — Digital Healthcare Platform</h3>
+          <p class="work-desc">Designed a full healthcare website UI for HealNet — featuring doctor discovery, easy appointment booking in 3 steps, and a trust-focused layout that converts visitors into patients.</p>
+          <a href="#" class="work-link" onclick="openLightbox('Free iPad Pro mockup on a dark podium (Mockuuups Studio) 1.png'); return false;">View Case Study &rsaquo;</a>
+        </div>
+      </div>
+      <div class="work-card">
+        <img src="mockuuups-free-ipad-pro-mockup-on-a-dark-podium (1).jpeg" alt="Botole Product Website" />
+        <div class="work-info">
+          <span class="work-tag">Product Website</span>
+          <h3>Botole — Drinking Water Bottle Brand</h3>
+          <p class="work-desc">Created a minimal, bold product landing page for Botole — clean typography, strong hero section, and a product-first layout designed to drive direct sales and brand awareness.</p>
+          <a href="#" class="work-link" onclick="openLightbox('mockuuups-free-ipad-pro-mockup-on-a-dark-podium (1).jpeg'); return false;">View Case Study &rsaquo;</a>
+        </div>
+      </div>
+      <div class="work-card">
+        <img src="mockuuups-free-macbook-air-15-mockup-on-dark-textured-rocks (2).jpeg" alt="Wellness Platform UI" />
+        <div class="work-info">
+          <span class="work-tag">Wellness & Health</span>
+          <h3>Meditry — Mental & Physical Wellness App</h3>
+          <p class="work-desc">Designed a calming, modern wellness platform UI — nurturing mental, physical & spiritual wellbeing with 480+ programs, trusted medical expertise, and a warm, accessible visual identity.</p>
+          <a href="#" class="work-link" onclick="openLightbox('mockuuups-free-macbook-air-15-mockup-on-dark-textured-rocks (2).jpeg'); return false;">View Case Study &rsaquo;</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Banner Projects -->
+    <div class="work-grid-banner">
+      <div class="work-card-banner">
+        <img src="Banner.jpg" alt="Rick Rogue LinkedIn Banner" />
+        <div class="work-info">
+          <span class="work-tag">LinkedIn Banner</span>
+          <a href="#" class="work-link" onclick="openLightbox('Banner.jpg'); return false;">View Design &rsaquo;</a>
+        </div>
+      </div>
+      <div class="work-card-banner">
+        <img src="Frame 3 (24).png" alt="Financial Leadership Banner" />
+        <div class="work-info">
+          <span class="work-tag">LinkedIn Banner</span>
+          <a href="#" class="work-link" onclick="openLightbox('Frame 3 (24).png'); return false;">View Design &rsaquo;</a>
+        </div>
+      </div>
+      <div class="work-card-banner">
+        <img src="Frame 8 (4).png" alt="GTM Marketing Speaker Banner" />
+        <div class="work-info">
+          <span class="work-tag">LinkedIn Banner</span>
+          <a href="#" class="work-link" onclick="openLightbox('Frame 8 (4).png'); return false;">View Design &rsaquo;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section section-dark" id="testimonials">
+    <div class="section-label">Client Love</div>
+    <h2 class="section-title">What Clients <span class="accent">Say</span></h2>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <div class="stars-row">★★★★★</div>
+        <p>"I hired Awais to design the UI for our AIB project and he absolutely nailed it. The design was clean, professional, and delivered on time. Highly recommend his work to anyone looking for a top-tier UI/UX designer."</p>
+        <div class="testimonial-author">
+          <img src="3.jfif" alt="Muhammad Aqib Javeed" />
+          <div>
+            <strong>Muhammad Aqib Javeed</strong>
+            <span>Software Engineer | Python | GDSC Core Team</span>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars-row">★★★★★</div>
+        <p>"Awais designed my LinkedIn banner and the result was outstanding. It perfectly captured my personal brand and professional identity. The quality and attention to detail were exceptional — truly impressive work."</p>
+        <div class="testimonial-author">
+          <img src="2.jfif" alt="Rick Roque, CMB" />
+          <div>
+            <strong>Rick Roque, CMB</strong>
+            <span>Top Retail Mortgage Bank | UC Berkeley | AI Advisor</span>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars-row">★★★★★</div>
+        <p>"Awais created a fantastic banner design for me and I was so impressed that I shared a positive review on Facebook. His creativity, professionalism, and quick turnaround make him stand out. Will definitely work with him again."</p>
+        <div class="testimonial-author">
+          <img src="1769610420213 (1).jfif" alt="Alexander Peters" />
+          <div>
+            <strong>Alexander Peters</strong>
+            <span>Operations Specialist | Orbit Utilities</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQS -->
+  <section class="section" id="faqs">
+    <div class="section-label">Got Questions?</div>
+    <h2 class="section-title">Frequently Asked <span class="accent">Questions</span></h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">What makes your UI/UX design different from others? <span>+</span></button>
+        <div class="faq-a">I don't just make things look good — I design with purpose. Every pixel, color, and interaction is backed by user psychology and business strategy. My designs don't just impress, they convert and retain users.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">What tools and process do you use for UI/UX projects? <span>+</span></button>
+        <div class="faq-a">I work in Figma for all UI/UX design — from wireframes to high-fidelity prototypes. My process starts with discovery & research, moves into wireframing, then visual design, and ends with a clean developer handoff with all assets and design tokens.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">What does personal branding actually mean and why do I need it? <span>+</span></button>
+        <div class="faq-a">Personal branding is how the world perceives you before you even speak. It's your visual identity, your message, and your positioning — all working together. In today's digital world, a strong personal brand is the difference between being overlooked and being sought after.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">What's included in your personal branding service? <span>+</span></button>
+        <div class="faq-a">My personal branding package includes a custom logo, color palette, typography system, LinkedIn banner, social media kit, and brand guidelines — everything you need to show up consistently and professionally across all platforms.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">Can you handle both graphic design and UI design together? <span>+</span></button>
+        <div class="faq-a">Absolutely. I bridge the gap between graphic design and UI design seamlessly. Whether it's a brand identity, a marketing banner, or a full product interface — I bring visual consistency and strategic thinking to every deliverable.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">What kind of graphic design work do you specialize in? <span>+</span></button>
+        <div class="faq-a">I specialize in LinkedIn banners, social media graphics, brand identity design, presentation decks, and marketing visuals. Every design is crafted to communicate clearly, look premium, and make an instant impression.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">How can LinkedIn optimization help grow my business or career? <span>+</span></button>
+        <div class="faq-a">LinkedIn is the most powerful professional platform in the world. A well-optimized profile with a strong banner, clear headline, and consistent branding positions you as an authority — attracting clients, opportunities, and connections on autopilot.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">What does your LinkedIn optimization service include? <span>+</span></button>
+        <div class="faq-a">I design a custom LinkedIn banner that reflects your personal brand, help craft your headline and about section for maximum impact, and ensure your entire profile is visually consistent and strategically positioned to attract your ideal audience.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section-dark contact-section" id="contact">
+    <div class="section-label">Let's Connect</div>
+    <h2 class="section-title">Ready to Build Something <span class="accent">Great?</span></h2>
+    <p class="contact-sub">Drop me a message and let's talk about your project.</p>
+    <form class="contact-form" action="https://formspree.io/f/mawaisjaveed17@gmail.com" method="POST">
+      <div class="form-row">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+      </div>
+      <input type="text" name="project" placeholder="Project Type (e.g. Mobile App, Website)" />
+      <textarea name="message" placeholder="Tell me about your project..." rows="5" required></textarea>
+      <input type="hidden" name="_replyto" value="mawaisjaveed17@gmail.com" />
+      <button type="submit" class="btn-primary">Send Message</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-left">Awais Javeed. &copy; 2026</div>
+    <div class="footer-links">
+      <a href="#">Dribbble</a>
+      <a href="#">Behance</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">Twitter</a>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <span class="lightbox-close">&times;</span>
+    <img id="lightboxImg" src="" alt="Project" />
+  </div>
+
+  <!-- LinkedIn Floating Button -->
+  <a href="https://www.linkedin.com/in/muhammad-awais-javeed-18a57836" target="_blank" class="linkedin-float" title="Connect on LinkedIn">
+    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+    </svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>

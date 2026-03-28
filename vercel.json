@@ -1,0 +1,6 @@
+{
+  "version": 2,
+  "outputDirectory": "portfolio",
+  "builds": [{ "src": "portfolio/index.html", "use": "@vercel/static" }],
+  "routes": [{ "src": "/(.*)", "dest": "/portfolio/$1" }]
+}
