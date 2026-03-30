@@ -259,7 +259,7 @@ document.getElementById('contactForm').addEventListener('submit', (e) => {
     'Message:\n' + message
   );
 
-  window.location.href = 'mailto:mawaisjaveed17@gmail.com?subject=' + subject + '&body=' + body;
+  window.open('https://mail.google.com/mail/?view=cm&to=mawaisjaveed17@gmail.com&su=' + subject + '&body=' + body, '_blank');
 
   const btn = e.target.querySelector('button');
   btn.textContent = 'Message Sent!';
