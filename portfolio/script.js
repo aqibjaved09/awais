@@ -244,8 +244,23 @@ document.querySelectorAll('.process-card, .service-card').forEach(card => {
 });
 
 // Contact form submit
-document.querySelector('.contact-form').addEventListener('submit', (e) => {
+document.getElementById('contactForm').addEventListener('submit', (e) => {
   e.preventDefault();
+  const name = document.getElementById('userName').value;
+  const email = document.getElementById('userEmail').value;
+  const project = document.getElementById('userProject').value;
+  const message = document.getElementById('userMessage').value;
+
+  const subject = encodeURIComponent('New Message from Portfolio - ' + name);
+  const body = encodeURIComponent(
+    'Name: ' + name + '\n' +
+    'Email: ' + email + '\n' +
+    'Project: ' + project + '\n\n' +
+    'Message:\n' + message
+  );
+
+  window.location.href = 'mailto:mawaisjaveed17@gmail.com?subject=' + subject + '&body=' + body;
+
   const btn = e.target.querySelector('button');
   btn.textContent = 'Message Sent!';
   btn.style.background = '#22c55e';
